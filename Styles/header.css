@@ -1,0 +1,181 @@
+.header{
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(220,220,220);
+}
+
+.leftSection{
+    display: flex;
+    align-items: center;
+}
+
+.midSection{
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.rightSection{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+
+.hamburger{
+    height: 25px;
+    margin-left: 24px;
+    margin-right: 24px;
+
+}
+
+.ytlogo{
+    height: 20px;
+}
+
+.SearchBar{
+    height: 35px;
+    padding-left: 13px;
+    font-size: 15px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: grey;
+    box-shadow:1px 2px 5px rgba(0,0,0,0.1);
+    width: 60px;
+    border-radius: 20px;
+    transition: 0.2s ease-out;
+}
+
+.SearchBar:hover {
+    flex:1;
+    transition: 0.5s;
+}
+
+
+.SearchBar::placeholder{
+    font-family: Arial;
+    font-size: 16px;
+}
+
+.searchButton{
+    height: 39px;
+    width: 40px;
+    background-color: rgba(240, 240, 240,);
+    border-width: 1px;
+    border-style: solid;
+    border-color: grey;
+    margin-left: 8px;
+    margin-right: 10px;
+    padding-left: 8px;
+    border-radius: 20px;
+}
+
+.searchButton, 
+.micSearch,
+.uploadIconClass,
+.appsIconClass,
+.notificationsIconClass{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchButton .tooltip,
+.micSearch .tooltip,
+.uploadIconClass .tooltip,
+.appsIconClass .tooltip,
+.notificationsIconClass .tooltip{
+    font-family: Arial;
+    position: absolute;
+    background-color:gray;
+    color: white;
+    padding-top: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 4px;
+    border-radius: 8px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.searchButton:hover .tooltip,
+.micSearch:hover .tooltip,
+.uploadIconClass:hover .tooltip,
+.appsIconClass:hover .tooltip,
+.notificationsIconClass:hover .tooltip{
+    opacity: 1;
+}
+
+.searchIcon{
+    height: 25px;
+}
+
+.micSearch{
+    height: 39px;
+    width: 40px;
+    border-radius: 19.5px;
+    border: none;
+    background-color: rgba(240, 240, 240,);
+}
+
+.micIcon{
+    height: 25px;
+}
+
+.uploadIcon{
+    height: 24px;
+}
+
+.appsIcon{
+    height: 24px;
+}
+
+.notificationsIcon{
+    height: 24px;
+}
+
+.notificationsIconCount{
+    position: relative;
+}
+
+.notificationsCount{
+    font-family: Arial;
+    font-size: 11px;
+    padding-top: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+    position: absolute;
+    top: -2px;
+    right: -5px;
+    background-color: rgba(200,0,0);
+    color: white;
+}
+
+.myDP{
+    height: 30px;
+    border-radius: 15px;
+    margin-right: 12px;
+}
+

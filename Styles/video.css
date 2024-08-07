@@ -1,0 +1,80 @@
+.Thumbnail{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.title{
+    margin-top: 0;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 20px;
+    margin-bottom: 12px;
+}
+
+.VideoInfoGrid{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.pfp{
+    width: 35px;
+    border-radius: 50px;
+}
+
+.thumbnailRow{
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.author,.stats{
+    font-size: 13px;
+    color: rgb(96,96,96);
+}
+
+.author{
+    margin-bottom: 4px;
+}
+
+.author-link{
+    text-decoration: none;
+}
+
+.videoGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+}
+
+@media (max-width: 750px) {
+    .videoGrid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width:751px) and (max-width: 999px){
+    .videoGrid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1000px) {
+    .videoGrid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.videoTime{
+    font-family: Arial;
+    font-size: 12px;
+    background-color: black;
+    color: white;
+    padding-top: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 4px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 2px;
+}
